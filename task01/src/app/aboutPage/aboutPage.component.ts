@@ -3,14 +3,14 @@ import { FakeUsersService } from '../fakeUsers/fakeUsers.service';
 import { User } from '../fakeUsers/fakeUsers';
 
 @Component({
-    templateUrl: './aboutPage.component.html'
+  templateUrl: './aboutPage.component.html'
 })
 export class AboutPageComponent {
 
-    private users: User[];
+  private users: User[];
 
-    constructor(private usersService: FakeUsersService) {
-        this.users = this.usersService.getAll();
-    }
+  constructor(private usersService: FakeUsersService) {
+    this.users = this.usersService.getAll();
+  }
 
 }

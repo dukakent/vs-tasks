@@ -2,20 +2,20 @@ import { User, fakeUsers } from './fakeUsers';
 
 export class FakeUsersService {
 
-    private users: User[];
+  private users: User[];
 
-    constructor() {
-        this.users = fakeUsers;
-    }
+  constructor() {
+    this.users = fakeUsers;
+  }
 
-    getById(id) {
-        return this.users.find((element, index) => {
-            return element.id === id;
-        });
-    }
+  getById(id) {
+    return this.users.find((element, index) => {
+      return element.id === id;
+    });
+  }
 
-    getAll() {
-        return this.users;
-    }
+  getAll() {
+    return this.users;
+  }
 
 }

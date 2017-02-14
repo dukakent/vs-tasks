@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './homePage.component.html'
+  templateUrl: './homePage.component.html'
 })
-export class HomePageComponent {}
+export class HomePageComponent { }

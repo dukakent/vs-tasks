@@ -4,22 +4,22 @@ import { FakeUsersService } from '../fakeUsers/fakeUsers.service';
 import { User } from '../fakeUsers/fakeUsers';
 
 @Component({
-    templateUrl: './profilePage.component.html'
+  templateUrl: './profilePage.component.html'
 })
 export class ProfilePageComponent {
 
-    private user: User;
+  private user: User;
 
-    constructor(
-        private route: ActivatedRoute,
-        private usersService: FakeUsersService
-    ) {}
+  constructor(
+    private route: ActivatedRoute,
+    private usersService: FakeUsersService
+  ) { }
 
-    ngOnInit() {
-        this.route
-            .params
-            .subscribe((params: Params) => {
-                this.user = this.usersService.getById(+params['id'])
-            });
-    }
+  ngOnInit() {
+    this.route
+      .params
+      .subscribe((params: Params) => {
+        this.user = this.usersService.getById(+params['id'])
+      });
+  }
 }
