@@ -4,11 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "ng": "./node_modules/.bin/ng",
-    "start": "npm run ng serve",
-    "test": "npm run ng test",
-    "lint": "npm run ng lint",
-    "e2e": "npm run ng e2e"
+    "ng": "./node_modules/.bin/ng"
   },
   "private": true,
   "dependencies": {
